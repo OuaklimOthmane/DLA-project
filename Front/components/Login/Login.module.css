@@ -1,0 +1,139 @@
+.container {
+  height: 100vh;
+  width: 100%;
+  padding: 2rem 2rem;
+  background-color: rgba(240, 238, 237, 1);
+}
+
+.wrapper {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.picture_wrapper {
+  height: 100%;
+  width: 100%;
+  /* background-color: #333333; */
+  background-image: url("/img/hero-1.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.inputs_section {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0 2rem;
+}
+
+.link {
+  height: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.logo_container {
+  height: 100%;
+  width: auto;
+}
+
+.form_container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.input_wrapper {
+  max-width: 400px;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.input_container {
+  width: 100%;
+  background-color: transparent;
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  color: #333333;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: normal;
+  border: 1px solid #333333;
+}
+
+.action_btn {
+  color: #333333;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1px;
+  padding: 0 1rem;
+  height: 2rem;
+  position: relative;
+  z-index: 5;
+  display: grid;
+  place-items: center;
+  grid-template-columns: max-content max-content;
+  gap: 0.5rem;
+}
+
+.action_btn::before {
+  content: "";
+  height: 2rem;
+  width: 2rem;
+  border-radius: 1rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    90deg,
+    #d85454 -16.46%,
+    rgba(216, 84, 84, 0.04) 69.24%
+  );
+  z-index: -1;
+  transition: all 0.25s ease-in-out;
+}
+
+.action_btn:hover.action_btn::before {
+  width: 100%;
+  background: #d85454;
+}
+
+.erreur_shake {
+  border-color: #d45759;
+  animation: shake 0.1635s 0s 3;
+}
+
+.erreur {
+  color: red;
+  border-color: #d45759;
+  animation: shake 0.1635s 0s 3;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(8px);
+  }
+  75% {
+    transform: translateX(-8px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

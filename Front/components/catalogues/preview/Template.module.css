@@ -1,0 +1,149 @@
+.document {
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin: auto;
+}
+
+.page_img {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.main_img {
+  width: 100%;
+  height: auto;
+}
+
+.sub_img {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 2rem;
+  margin-right: 2rem;
+}
+
+.sub_img img {
+  height: 17px;
+  width: auto;
+  display: block;
+  float: left;
+  text-align: end;
+}
+
+.page_title {
+  background-color: white;
+  display: grid;
+  grid-template-rows: max-content 1fr max-content;
+  gap: 2rem;
+  height: 100vh;
+  min-height: 900px;
+  padding: 0px 20px;
+}
+
+.simple_header {
+  width: 100%;
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.simple_header img {
+  height: 25px;
+  width: auto;
+}
+.separator_wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.header_title {
+  font-size: 14px;
+  font-weight: 600;
+  color: black;
+}
+
+.separator {
+  width: 100%;
+  height: 3px;
+  background-color: black;
+}
+
+.page_title_body {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page_title_body h1 {
+  font-size: 25px;
+  text-align: center;
+  font-weight: 600;
+  color: black;
+}
+
+.page_products {
+  background-color: white;
+  display: grid;
+  grid-template-rows: max-content 1fr max-content;
+  gap: 2rem;
+  height: 100vh;
+  min-height: 900px;
+  padding: 0px 20px;
+}
+
+.products_container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+}
+
+.products_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.products_card img {
+  height: 165px;
+  width: auto;
+}
+
+.product_title {
+  font-size: 17px;
+  font-weight: 600;
+  color: black;
+  max-width: 300px;
+  text-align: center;
+}
+
+.product_desc {
+  font-size: 13px;
+  font-weight: 600;
+  color: black;
+  max-width: 300px;
+  text-align: center;
+}
+
+.product_price {
+  width: max-content;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px 30px;
+  color: white;
+  background-color: black;
+  text-align: center;
+}

@@ -1,0 +1,68 @@
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper {
+  height: 100%;
+  width: 100%;
+  max-width: 960px;
+  display: grid;
+  grid-template-rows: max-content 1fr;
+  row-gap: 2rem;
+  padding-top: 3rem;
+}
+
+.breadcrump {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.15rem;
+  color: #333333;
+}
+
+.breadcrump_item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.breadcrump_progress {
+  font-size: 12px;
+  font-weight: 600;
+  color: #333333;
+  line-height: normal;
+  height: 1.45rem;
+  width: 1.45rem;
+  border-radius: 50%;
+  border: 0.5px solid #333333;
+  display: grid;
+  place-items: center;
+}
+
+.separator {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.breadcrump_title {
+  display: none;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+}
+
+.active .breadcrump_progress {
+  background-color: #333333;
+  color: #fff;
+}
+
+.active .breadcrump_title {
+  display: block;
+}

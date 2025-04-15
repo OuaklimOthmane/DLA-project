@@ -1,0 +1,14 @@
+.landing_container {
+  height: 100vh;
+  background-color: #f0eeed;
+
+  padding: 2rem 3rem;
+}
+
+.landing_wrapper {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: max-content 1fr;
+  gap: 2rem;
+}

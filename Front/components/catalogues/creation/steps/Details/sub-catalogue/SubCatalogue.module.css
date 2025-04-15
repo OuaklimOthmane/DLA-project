@@ -1,0 +1,134 @@
+.details_item {
+  width: 100%;
+  border-radius: 3px;
+  border: 0.5px solid #dfdfdf;
+  background-color: #fff;
+  padding: 1.25rem 1.15rem;
+}
+
+.sub {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  column-gap: 0.5rem;
+  padding: 0rem 0rem;
+  border-radius: 3px;
+  /* border: 0.5px solid #dfdfdf; */
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.details_main_title {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: normal;
+  color: #333333;
+}
+
+.details_main_action {
+  display: flex;
+  align-items: center;
+  column-gap: 0.65rem;
+}
+
+.product_container {
+  background-color: #fbf8f8;
+  padding: 1rem 0.75rem;
+  margin-top: 1.25rem;
+  border-radius: 1px;
+  width: 100%;
+  display: grid;
+  grid-template-rows: max-content 1fr;
+  row-gap: 0.75rem;
+}
+
+.product_wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.75rem;
+}
+
+.details_action {
+  padding: 0.65rem 0.75rem;
+  border-radius: 50px;
+  border: none;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  color: #fff;
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  align-items: center;
+  column-gap: 0.3rem;
+  justify-self: end;
+  background-color: #d85454;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+
+.form {
+  padding: 1.25rem 0.75rem;
+  padding-bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  max-height: calc(100vh - 100px);
+  overflow: auto;
+}
+
+.form_item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.form_label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #d85454;
+  line-height: normal;
+}
+
+.form_input {
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: 1px solid #333333;
+  font-size: 13px;
+  font-weight: 600;
+  color: #333333;
+  line-height: normal;
+}
+
+.form_button {
+  width: max-content;
+  font-weight: 600;
+  margin-top: 0.5rem;
+  align-self: center;
+}
+
+.product_displayed {
+  width: 100%;
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.product_displayed img {
+  height: 2.5rem;
+  width: auto;
+  border-radius: 2px;
+  border: 1px solid #333333;
+}
+
+.product_displayed p {
+  font-size: 15px;
+  color: #333333;
+  font-weight: 600;
+}

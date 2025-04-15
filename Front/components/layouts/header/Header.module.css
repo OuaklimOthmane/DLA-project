@@ -1,0 +1,41 @@
+.header_container {
+  width: 100%;
+  /* padding: 1.5rem 3rem; */
+}
+
+.header_wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  /* padding: 0.25rem 1rem; */
+}
+
+.link {
+  height: 1.5rem;
+}
+
+.logo_container {
+  height: 100%;
+  width: auto;
+}
+
+.header_btn {
+  width: max-content;
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 15px;
+  font-weight: 600;
+  color: #333333;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  border: 0.5px solid transparent;
+  background-color: transparent;
+  transition: all 0.2s ease-in-out;
+}
+
+.header_btn:hover {
+  border: 0.5px solid #333333;
+}
